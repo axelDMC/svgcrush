@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0a0a"/>
+      <stop offset="100%" stop-color="#111811"/>
+    </linearGradient>
+
+    <!-- Accent glow behind logo -->
+    <radialGradient id="glow" cx="50%" cy="48%" r="38%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Subtle grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    </pattern>
+
+    <!-- Emerald glow filter -->
+    <filter id="emerald-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Icon shadow -->
+    <filter id="icon-shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="12" flood-color="#10b981" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Ambient glow -->
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Top accent bar -->
+  <rect width="1200" height="3" fill="#10b981" opacity="0.6"/>
+
+  <!-- Left decorative bar -->
+  <rect x="72" y="0" width="2" height="630" fill="#10b981" opacity="0.08"/>
+
+  <!-- Right decorative bar -->
+  <rect x="1126" y="0" width="2" height="630" fill="#10b981" opacity="0.08"/>
+
+  <!-- Icon background circle -->
+  <rect x="524" y="155" width="152" height="152" rx="32"
+        fill="#0f1f19" stroke="#10b981" stroke-width="1.5" opacity="0.9"
+        filter="url(#icon-shadow)"/>
+
+  <!-- Zap icon (SVG Crush logo) -->
+  <g transform="translate(600, 231)" filter="url(#emerald-glow)">
+    <polygon
+      points="12,-36 -6,0 10,0 -12,36 6,0 -10,0"
+      fill="#10b981"
+      stroke="#10b981"
+      stroke-width="1"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- SVGCrush wordmark -->
+  <text
+    x="600" y="378"
+    font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+    font-size="82"
+    font-weight="800"
+    text-anchor="middle"
+    letter-spacing="-2"
+    fill="#f5f5f5"
+  >SVG<tspan fill="#10b981">Crush</tspan></text>
+
+  <!-- Tagline -->
+  <text
+    x="600" y="440"
+    font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+    font-size="30"
+    font-weight="400"
+    text-anchor="middle"
+    letter-spacing="1"
+    fill="#737373"
+  >Free SVG Optimizer — Fast, Private, Powerful</text>
+
+  <!-- Badges row -->
+  <!-- Badge 1: 100% Private -->
+  <rect x="258" y="498" width="180" height="48" rx="24"
+        fill="#0f1f19" stroke="#10b981" stroke-width="1" stroke-opacity="0.35"/>
+  <circle cx="294" cy="522" r="6" fill="#10b981"/>
+  <text x="310" y="527"
+        font-family="system-ui, -apple-system, sans-serif"
+        font-size="20" font-weight="600" fill="#a3a3a3">100% Private</text>
+
+  <!-- Badge 2: No uploads -->
+  <rect x="462" y="498" width="182" height="48" rx="24"
+        fill="#0f1f19" stroke="#10b981" stroke-width="1" stroke-opacity="0.35"/>
+  <circle cx="498" cy="522" r="6" fill="#10b981"/>
+  <text x="514" y="527"
+        font-family="system-ui, -apple-system, sans-serif"
+        font-size="20" font-weight="600" fill="#a3a3a3">No Uploads</text>
+
+  <!-- Badge 3: Batch support -->
+  <rect x="668" y="498" width="188" height="48" rx="24"
+        fill="#0f1f19" stroke="#10b981" stroke-width="1" stroke-opacity="0.35"/>
+  <circle cx="704" cy="522" r="6" fill="#10b981"/>
+  <text x="720" y="527"
+        font-family="system-ui, -apple-system, sans-serif"
+        font-size="20" font-weight="600" fill="#a3a3a3">Batch Support</text>
+
+  <!-- Domain label -->
+  <text
+    x="600" y="607"
+    font-family="system-ui, -apple-system, 'Segoe UI', sans-serif"
+    font-size="22"
+    font-weight="500"
+    text-anchor="middle"
+    fill="#404040"
+    letter-spacing="1"
+  >svgcrush.shop</text>
+</svg>

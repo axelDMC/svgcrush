@@ -34,12 +34,14 @@ export const metadata: Metadata = {
     type: "website",
     url: SITE_URL,
     siteName: "SVG Crush",
+    images: [{ url: `${SITE_URL}/og-image.png`, width: 1200, height: 630, alt: "SVG Crush — Free SVG Optimizer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "SVG Crush — Free SVG Optimizer & Compressor Online",
     description:
       "Optimize and compress SVG files instantly in your browser. No server uploads, no file size limits. Free forever.",
+    images: [`${SITE_URL}/og-image.png`],
   },
 };
 
